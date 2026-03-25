@@ -1,0 +1,167 @@
+.site-footer {
+    background-color: $primary-1;
+    color: $text-5;
+    line-height: 1.6;
+    padding: 32px 0 20px;
+    @media (max-width: $md) {
+      padding: 0;
+    }
+  
+    .container {
+      max-width: $max-width-container;
+      margin: 0 auto;
+    }
+  
+    .footer-content {
+      display: grid;
+      grid-template-columns: auto auto auto auto auto;
+      gap: 60px;
+      margin-bottom: 40px;
+  
+      @media (max-width: $lg) {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+  
+      @media (max-width: $md) {
+        display: flex;
+        flex-direction: column;
+        gap: 0; // Remove all gaps
+        padding-top: 32px; // Added top padding to match Figma model
+        margin-bottom: 20px; // Reduced margin to reduce space before copyright
+      }
+    }
+  
+    .footer-column {
+      &.company-info {
+        max-width: 282px;
+        .logo {
+          margin-bottom: 20px;
+  
+          img {
+            max-width: 178px;
+            height: auto;
+          }
+        }
+  
+        .address {
+          color: $text-5;
+          margin-bottom: 15px;
+          font-size: 16px;
+          line-height: 1.5;
+        }
+  
+        .contact-item {
+          margin-bottom: 10px;
+  
+          a {
+            color: $primary-6;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: color 0.2s ease;
+  
+            &:hover {
+              color: $primary-7;
+            }
+  
+            i {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+  
+      h3 {
+        color: $text-3;
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 15px;
+        margin-top: 0;
+      }
+  
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+  
+        li {
+          margin-bottom: 8px;
+  
+          a {
+            color: $text-5;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.2s ease;
+  
+            &:hover {
+              color: $primary-6;
+            }
+          }
+        }
+      }
+    }
+  
+    .footer-bottom {
+      border-top: 1px solid $primary-4;
+      padding-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+  
+      @media (max-width: $md) {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        padding-bottom: 20px; // Added bottom padding
+      }
+  
+      .copyright {
+        color: $shade-1;
+        font-size: 14px;
+  
+        .fatweb {
+          color: $primary-7;
+          font-weight: 400;
+        }
+      }
+  
+      .social-icons {
+        display: flex;
+        gap: 12px;
+  
+        .social-icon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 32px;
+          height: 32px;
+          border-radius: 50%;
+          border: 2px solid $primary-6;
+          color: $primary-6;
+          text-decoration: none;
+          transition: all 0.2s ease;
+          background-color: $primary-1;
+  
+          &:hover {
+            background-color: $primary-6;
+            color: $white;
+          }
+  
+          i {
+            font-size: 14px;
+  
+            &.fa-instagram {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+  

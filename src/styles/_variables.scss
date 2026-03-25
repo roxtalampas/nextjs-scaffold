@@ -1,0 +1,92 @@
+// Typography
+$font-poppins: 'Poppins', sans-serif;
+$font-rubik: 'Rubik', sans-serif;
+$font-avenir: 'Avenir Next Cyr', sans-serif;
+
+$font-family: #{$font-avenir} !important; // Select which default font to use
+
+
+// Breakpoints
+$sm: 480px; // smaller mobile (i.e. <= 480px)
+$md: 768px; // mobile (i.e. <= 768px)
+$lg: 1024px; // tablets (i.e. <= 1024px)
+$xl: 1280px; // small laptops/desktops  (i.e. >= 1280px)
+$xxl: 1400px; // large desktops (i.e. >= 1400px)
+$xxxl: 1536px; // large desktops (i.e. >= 1536px)
+
+// Layouts
+$max-width-container: 1200px;
+$max-width-inner-page: 996px;
+$max-width-inner-page-lg: 1024px;
+$max-width-inner-page-md: 792px;
+$max-width-inner-page-sm: 588px;
+$side-padding-m: 20px;
+$side-padding: 28px;
+$section-tb-m: 24px; // 1.5rem
+$section-tb: 40px; // 2.5rem
+
+
+// Card
+$card-width: 282px;
+
+// Header heights
+$header-height-m: 72px;
+$header-height: 96px;
+
+
+// Black/White Colours
+$black: #000000;
+$white: #ffffff;
+$shade: #666666;
+$shade-1: #888888;
+$grey-f: #F9F9F9;
+
+
+
+// Text Colours
+$text-1: #121F23;
+$text-3: #313E42;
+$text-5: #505D61;
+$text-7: #71777A;
+$text-e: #E6ECEF;
+
+
+
+// Primary Colours
+$primary-1: #F3FCFB;
+$primary-2: #E7F6F5;
+$primary-3: #D0EEEC;
+$primary-4: #A1DCD8;
+$primary-5: #13BEB6;
+$primary-6: #13A89E; // Primary
+$primary-7: #0E8078;
+$primary-8: #0A5E59;
+$primary-9: #0E807814; // 8% opacity
+$primary-10: #0E807829; // 16% opacity
+$primary-11: #D0EBEA;
+$primary-12: #08A79D;
+
+$primary: $primary-6;
+
+
+
+// Default border colour
+$border-color: #BBBBBB;
+$border-color-2: #E6ECEF;
+$border-color-3: #666666;
+$border-color-4: #DDDDDD;
+$border-color-5: #EEEEEE;
+
+
+
+// Round borders sizes
+$border-radius-sm: 4px;
+$border-radius-md: 8px;
+$border-radius-lg: 12px;
+$border-radius-xl: 16px;
+$border-radius-2xl: 24px;
+
+
+// Button radius
+$btn-radius: 80px;
+

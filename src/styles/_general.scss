@@ -1,0 +1,208 @@
+html {
+    overflow-x: hidden;
+  }
+  body {
+    margin: 0;
+    font-family: #{$font-family};
+  }
+  .min-w-fit { // missing tailwind class
+    min-width: fit-content;
+  }
+  .max-width-inner-page {
+    max-width: $max-width-inner-page;
+  }
+  .full-width {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+  }
+  
+    
+  
+  svg {
+    display: inline-block;
+  }
+  img {
+    @media (max-width: $md) {
+      width: 100%;
+      &.icon {
+        width: auto;
+      }
+    }
+    &.rounded-sm {
+      border-radius: $border-radius-sm;
+    }
+    &.rounded-md {
+      border-radius: $border-radius-md;
+    }
+    &.rounded-lg {
+      border-radius: $border-radius-lg;
+    }
+  }
+  
+  
+  .rounded-sm {
+    border-radius: $border-radius-sm;
+  }
+  .rounded-md {
+    border-radius: $border-radius-md;
+  }
+  .rounded-lg {
+    border-radius: $border-radius-lg;
+  }
+  .rounded-xl {
+    border-radius: $border-radius-xl;
+  }
+  .rounded-2xl {
+    border-radius: $border-radius-2xl;
+  }
+  
+  
+  .btn-standard {
+    @include btn-standard;
+  }
+  .btn-primary {
+    @include btn-primary;
+  }
+  .btn-secondary {
+    @include btn-secondary;
+    &.learn-more {
+      border-radius: $border-radius-lg;
+    }
+  }
+  .btn-secondary-transparent {
+    @include btn-secondary-transparent;
+  }
+  .btn-tertiary {
+    @include btn-tertiary;
+  }
+  .btn-blog-category {
+    @include btn-blog-category;
+  }
+  .btn-find-out-more {
+    @include btn-find-out-more;
+  }
+  
+  
+  //////////////////////////////
+  // Text colours
+  //////////////////////////////
+  .primary {
+    color: $primary;
+  }
+  .primary-1 {
+    color: $primary-1;
+  }
+  .primary-2 {
+    color: $primary-2;
+  }
+  .primary-3 {
+    color: $primary-3;
+  }
+  .primary-4 {
+    color: $primary-4;
+  }
+  .primary-5 {
+    color: $primary-5;
+  }
+  .primary-6 {
+    color: $primary-6;
+  }
+  .primary-7 {
+    color: $primary-7;
+  }
+  .primary-8 {
+    color: $primary-8;
+  }
+  
+  .text-1 {
+    color: $text-1;
+  }
+  .text-3 {
+    color: $text-3;
+  }
+  .text-5 {
+    color: $text-5;
+  }
+  .text-7 {
+    color: $text-7;
+  }
+  .text-e {
+    color: $text-e;
+  }
+  
+  
+  
+  //////////////////////////////
+  // Background colours
+  //////////////////////////////
+  .bg-white {
+    background-color: $white;
+  }
+  .bg-primary {
+    background-color: $primary;
+  }
+  .bg-primary-1 {
+    background-color: $primary-1;
+  }
+  .bg-primary-2 {
+    background-color: $primary-2;
+  }
+  .bg-primary-3 {
+    background-color: $primary-3;
+  }
+  .bg-primary-4 {
+    background-color: $primary-4;
+  }
+  .bg-primary-5 {
+    background-color: $primary-5;
+  }
+  .bg-primary-6 {
+    background-color: $primary-6;
+  }
+  .bg-primary-7 {
+    background-color: $primary-7;
+  }
+  .bg-primary-8 {
+    background-color: $primary-8;
+  }
+  .bg-primary-11 {
+    background-color: $primary-11;
+  }
+  .bg-primary-12 {
+    background-color: $primary-12;
+  }
+  
+  
+  
+  // Border colours
+  .border-color {
+    border-color: $border-color;
+  }
+  .border-bottom-2-primary-3 {
+    border-bottom: 2px solid $primary-3;
+  }
+  
+  
+  // Additional typography classes
+  .p-large {
+    @include p-large;
+  }
+  .p-small {
+    @include p-small;
+  }
+  .caption-large {
+    @include caption-large;
+  }
+  .caption-small {
+    @include caption-small;
+  }
+  .tag-large {
+    @include tag-large;
+  }
+  .tag-small {
+    @include tag-small;
+  }

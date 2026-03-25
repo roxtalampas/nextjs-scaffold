@@ -1,0 +1,476 @@
+html {
+    $scroll-extra-offset-mobile: 0px;
+    $scroll-extra-offset-tablet: 0px;
+    $scroll-extra-offset: 0px;
+  
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    @media (width <= $xl) {
+      scroll-padding-top: calc(#{$header-height} + #{$scroll-extra-offset-tablet});
+    }
+    @media (width <= $md) {
+      scroll-padding-top: calc(#{$header-height-m} + #{$scroll-extra-offset-mobile});
+    }
+    @media (width > $xl) {
+      scroll-padding-top: calc(#{$header-height} + #{$scroll-extra-offset});
+    }
+  }
+  
+  
+  .announcement-banner {
+    display: flex;
+    display: none !important; // Comment out this line to turn on announcement banner.
+    background-color: $primary-5;
+    padding: 8px 16px;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: $white;
+    text-align: center;
+    text-transform: uppercase;
+    min-height: 40px;
+  }
+  
+  
+  // Mobile Menu Open
+  html.mobile-menu-open {
+    overflow: hidden;
+    .mobile-menu-icon {
+      &.hamburger {
+        display: none;
+      }
+      &.cross {
+        display: block;
+      }
+    }
+    .mobile-menu {
+      display: block !important;
+      overflow-x: hidden; // Prevents horizontal scroll for mobile menu
+      overflow-y: auto; // Makes menu content vertically scrollable if more items
+      -webkit-overflow-scrolling: touch; // Smooth scrolling on iOS
+      position: fixed;
+      // top: 60px;
+      top: calc(#{$header-height-m} + 40px);
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: calc(100dvh - 140px); // Viewport height minus header
+      background: $white;
+      z-index: 999;
+    }
+    .mobile-menu {
+      .menu-item-has-children {
+        .sub-menu{
+          display: none;
+        }
+      }
+      .menu-item-has-children > a {
+        position: relative;
+        padding-right: 30px;
+        pointer-events: auto;
+        cursor: pointer;
+        
+        & + .submenu-toggle-dropdown {
+          cursor: pointer;
+          display: inline-block;
+          content: '';
+          position: absolute;
+          right: 0px;
+          top: 36px;
+          width: 70px; 
+          height: 75px;
+          background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%2313A89E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>');
+          background-position: center;
+          background-size: 30px;
+          background-repeat: no-repeat;
+          transform: translateY(-50%);
+          transition: all 0.3s ease;
+          transform-origin: top center;
+          rotate: 0deg;
+          &.open {
+            rotate: 180deg;
+          }
+        }
+  
+  
+      }
+      
+      // Mobile CTA Buttons
+      .mobile-cta-buttons {
+        padding: 16px 1.5em;
+        display: flex;
+        flex-direction: row;
+        gap: 12px;
+        margin-top: auto; // Push buttons to bottom
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        background: $white;
+        
+        .mobile-cta {
+          flex: 1;
+          
+          &.contact-us {
+            a {
+              width: 100%;
+              justify-content: center;
+              min-width: 0;
+              white-space: nowrap;
+              font-size: 14px;
+            }
+          }
+          
+          &.telephone {
+            a {
+              width: 100%;
+              justify-content: center;
+              min-width: 0;
+              white-space: nowrap;
+              font-size: 14px;
+              
+              svg {
+                width: 18px;
+                height: 18px;
+              }
+              
+              span {
+                margin-left: 8px;
+              }
+            }
+          }
+        }
+      }
+      
+    }
+  }
+  // Mobile Menu Close
+  html {
+    .mobile-menu-icon {
+      &.hamburger {
+        display: block;
+      }
+      &.cross {
+        display: none;
+      }
+    }
+    .mobile-menu {
+      display: none;
+    }
+  
+  }
+  
+  // Header
+  header {
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+    background: $white;
+    box-shadow: 0px 1px 4px 0px #00000029;
+    min-height: $header-height-m;
+    @media (width > $md) {
+      min-height: $header-height;
+    }
+    section {
+      position: relative;
+      min-height: $header-height-m;
+      @media (width > $md) {
+        min-height: $header-height;
+      }
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 100%;
+      padding-top: 0;
+      padding-bottom: 0;
+      .site-brand {
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        .logo {
+          position: relative;
+          top: 2px;
+          a {
+            display: inline-block;                  
+            img {
+              position: relative;
+              max-width: 200px;
+              height: $header-height-m;
+              @media (width <= $md) {
+                max-width: 177px;
+              }
+            }
+          }
+        }
+      }
+  
+      // Desktop Menu
+      .site-nav {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-grow: 1;
+        @media (max-width: ($xl) ) {
+          display: none;
+        }
+        .menu-main-menu-container,
+        .menu-menu-container {
+          margin-left: auto;
+  
+        }
+        ul.menu {
+          display: flex;
+          flex-wrap: wrap;
+          li {
+            display: block;
+            padding: 8px 14px;
+            position: relative;
+            @media (width <= $xl) {
+              padding: 8px 12px;
+            }
+  
+            &:first-child {
+              padding-left: 0;
+            }
+            &:last-child {
+              padding-right: 0;
+            }
+  
+            
+            &.contact-us-link {
+              display: none;
+            }
+  
+            // Menu item text transform - uppercase for desktop menu
+            &.menu-item > a {
+              text-transform: uppercase;
+            }
+  
+            // Dropdown arrow for menu items with children
+            &.menu-item-has-children > a {
+              position: relative;
+              padding-right: 26px;
+              margin-right: -10px;
+              
+              &::after {
+                content: '';
+                position: absolute;
+                right: 8px;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 12px;
+                height: 12px;
+                background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none"><path d="M11.2705 2.41077L6.3016 7.37276C6.13403 7.54034 5.86617 7.54034 5.69903 7.37276L0.730171 2.41077C0.562599 2.24319 0.562599 1.96891 0.730171 1.80134L1.84189 0.696479C2.00946 0.528908 2.27731 0.528908 2.44446 0.696479L6.00031 4.25234L9.55617 0.696479C9.72374 0.528908 9.9916 0.528908 10.1587 0.696479L11.2705 1.80134C11.438 1.96891 11.438 2.24319 11.2705 2.41077Z" fill="%2313A89E"/></svg>');
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                transition: all 0.3s ease;
+                transform-origin: center;
+              }
+            }
+  
+            // Active dropdown state
+            &.dropdown-open {
+              > a {
+                color: $primary !important;
+                text-decoration: none;
+                
+                &::after {
+                  transform: translateY(-50%) rotate(180deg);
+                }
+              }
+              
+              .sub-menu {
+                opacity: 1;
+                visibility: visible;
+              }
+            }
+  
+            .current-menu-item {
+              a {
+                text-decoration: none;
+              }
+            }
+  
+            a {
+              white-space: pre;
+              font-size: 18px;
+              font-weight: 400;
+              color: $text-3;
+  
+              &:hover,
+              &:focus,
+              &:active {
+                color: $primary;
+                text-decoration: none;
+              }
+  
+              @media (width <= $xl) {
+                font-size: 18px;
+              }
+            }
+  
+            .sub-menu {
+              opacity: 0;
+              visibility: hidden;
+              transition: all 0.3s ease;
+              z-index: 1000;
+              position: absolute;
+              top: 100%;
+              width: 100vw;
+              left: 70%;
+              transform: translateX(-50%);
+              max-width: 234px;
+              background: $white;
+              border-radius: 8px;
+              box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  
+              &.show {
+                opacity: 1;
+                visibility: visible;
+              }
+  
+              li {
+                padding: 0;
+                
+                &:first-child {
+                  padding-left: 0;
+                  
+                  a {
+                    border-top-left-radius: 8px;
+                    border-top-right-radius: 8px;
+                  }
+                }
+                
+                &:last-child {
+                  a {
+                    border-bottom-left-radius: 8px;
+                    border-bottom-right-radius: 8px;
+                  }
+                }
+                
+                a {
+                  width: 100%;
+                  display: block;
+                  font-size: 16px;
+                  padding: 12px 16px;
+                  color: $text-3;
+                  text-decoration: none;
+                  transition: all 0.2s ease;
+                  
+                  &:hover,
+                  &:focus,
+                  &:active {
+                    background-color: $primary-2;
+                    color: $primary;
+                    text-decoration: underline;
+                    text-decoration-color: $primary;
+                    text-decoration-thickness: 1px;
+                    text-underline-offset: 9px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+  
+      .header-cta {
+        margin-left: 24px;
+        &.contact-us {
+          a {
+            min-width: 0;
+          }
+        }
+        &.telephone {
+          margin-left: 12px;
+          a {
+            min-width: 0;
+          }
+        }
+      }
+  
+      // Mobile Menu
+      .site-nav-mobile {
+        @include disable-highlight;
+        display: none;
+        @media (max-width: ($xl) ) {
+          display: flex;
+          align-items: center;
+        }
+        svg.mobile-menu-icon {
+          cursor: pointer;
+          z-index: 10;
+          width: 44px;
+          height: 44px;
+          padding: 0px;
+          margin-right: -10px;
+          path {
+            fill: $primary;
+          }
+          &.cross {
+            width: 44px;
+            height: 44px;
+            padding: 10px;
+          }
+        }
+  
+        .menu-main-menu-container {
+            ul {
+              display: flex;
+              flex-direction: column;
+  
+              li {
+                position: relative;
+                a {
+                  display: block;
+                  color: $text-3;
+                  font-size: 18px;
+                  font-weight: 500;
+                  border-bottom: 1px solid #dddddd;
+                  padding-top: 24px;
+                  padding-bottom: 24px;
+                  padding-left: 1.5em;
+                  padding-right: 1.5em;
+                  // text-transform: uppercase;
+  
+                  &:hover,
+                  &:focus,
+                  &:active {
+                    text-decoration: none;
+                  }
+                }
+  
+                &:last-child {
+                  a {
+                    border-bottom: none;
+                  }
+                }
+  
+                ul.sub-menu {
+                  border-bottom: 1px solid $border-color-4;
+                  li {
+                    a {
+                      padding-left: 2.2em;
+                      padding-right: 1.5em;
+                    }
+                  }
+                }
+              }
+            }
+          }
+  
+      }
+    }
+  }
+  
+  main {
+    // Allow for HERO BANNER to be pushed below the announcement banner.
+    $announcement-banner-height: 0px; //40px; // Set 0px = if turned off announcement banner. 40px = if turned on announcement banner.
+    
+    padding-top: calc(#{$header-height-m} + #{$announcement-banner-height});
+    @media (width > $md) {
+      padding-top: calc(#{$header-height} + #{$announcement-banner-height});
+    }
+  }
