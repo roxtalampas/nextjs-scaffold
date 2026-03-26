@@ -6,7 +6,9 @@
 @import '_layouts.scss';
 
 // Typography
-@include typography;
+@layer base {
+    @include typography;
+  }
 
 // Sections
 @import '_header.scss';
