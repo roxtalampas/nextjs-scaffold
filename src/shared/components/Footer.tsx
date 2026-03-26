@@ -36,9 +36,9 @@ const Footer = () => {
       {/* Office Address Column */}
       <div className="footer-column pt-4 md:pt-0">
         <h3>Location</h3>
-        <p className="address"><b className="text-1">Head Office:</b><br />38 Lowe Street Addington Christchurch 8011</p>
-        <p className="address"><b className="text-1">Office:</b><br/>
-        Tower 2, Level 3 (RHS), 205 Queen Street, Auckland 1010</p>
+        <p className="address"><b className="text-1">Headquarters:</b><br />123 Placeholder Lane, Suite 4B, Wellington 6011</p>
+        <p className="address"><b className="text-1">Branch:</b><br/>
+        7 Fictional Crescent, Level 2, Melbourne VIC 3000</p>
         
       </div>
 
