@@ -4,22 +4,6 @@
 
 
 // Used
-@font-face {
-    font-family: 'Avenir Next Cyr';
-    src: url('../fonts/AvenirNextCyr/AvenirNextCyr-Medium.ttf');
-    font-weight: 400;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Avenir Next Cyr';
-    src: url('../fonts/AvenirNextCyr/AvenirNextCyr-Demi.ttf'); // Using -Demi font file as 700(bold), coz -Bold file is too fat
-    font-weight: 700;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Avenir Next Cyr';
-    src: url('../fonts/AvenirNextCyr/AvenirNextCyr-Bold.ttf');
-    font-weight: 800;
-    font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
 
