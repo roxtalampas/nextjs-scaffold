@@ -1,4 +1,4 @@
-# kiunstudio
+# nextjs scaffold
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [scaffold](https://github.com/your-repo/scaffold).
 
