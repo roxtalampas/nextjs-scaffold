@@ -562,3 +562,10 @@
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;  // number of lines to show
   }
+
+
+  // Additional Helper classes
+  .tag-small {
+    font-size: 16px;
+    line-height: 1.3;
+  }

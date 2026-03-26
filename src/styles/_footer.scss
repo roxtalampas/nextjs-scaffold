@@ -141,25 +141,24 @@
           justify-content: center;
           width: 32px;
           height: 32px;
-          border-radius: 50%;
-          border: 2px solid $primary-6;
+          // border-radius: 50%;
+          // border: 2px solid $primary-6;
           color: $primary-6;
           text-decoration: none;
           transition: all 0.2s ease;
-          background-color: $primary-1;
+          //background-color: $primary-1;
   
-          &:hover {
-            background-color: $primary-6;
-            color: $white;
+
+          svg {
+            color: $primary-6;
+
+            &:hover {
+            color: $primary-4;
+            transition: all 0.2s ease;
+          }
           }
   
-          i {
-            font-size: 14px;
-  
-            &.fa-instagram {
-              font-size: 16px;
-            }
-          }
+
         }
       }
     }

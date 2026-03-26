@@ -1,5 +1,5 @@
-import { Button } from '@/shared/components/shadcnUi/button'
 import Image from 'next/image'
+import Link from 'next/link'
 
 
 const baseImagePath = "/assets/images/";
@@ -16,13 +16,13 @@ const HeroBanner = () => {
                 We build websites and web applications from idea to launch. Frontend, backend, and everything in between—clean code and modern tech.
               </p>
   
-              <div>
-                <Button className="btn-primary" >
+              <div className="flex gap-4">
+                <Link className="btn-primary" href="/contact">
                   Contact Us
-                </Button>
-                <Button className="btn-secondary">
+                </Link>
+                <Link className="btn-secondary" href="/about">
                   Learn More
-                </Button>
+                </Link>
   
               </div>
             </div>

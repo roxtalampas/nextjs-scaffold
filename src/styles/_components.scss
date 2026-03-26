@@ -1,13 +1,17 @@
 
 
 .hero-banner {
-    background-color: $primary-7;
+    background-color: $primary-5;
     min-height: 500px;
 
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
+    span {
+        color: $primary-7;
+    }
+
     h1 {
         color: $white;
     }

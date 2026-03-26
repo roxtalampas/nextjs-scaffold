@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { Button } from "@/shared/components/shadcnUi/button";
 
 
 // Data Types for the Header Navigation
@@ -70,9 +69,7 @@ const Header = () => {
           </nav>
           
           <div className="site-btns">
-            <Button asChild className="btn-primary">
-              <Link href="/contact">Contact Us</Link>
-            </Button>
+             <Link className="btn-primary" href="/contact">Contact Us</Link>
           </div>
       </section>
     </header>
