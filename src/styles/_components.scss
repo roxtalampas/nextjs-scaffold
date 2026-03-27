@@ -62,3 +62,49 @@
         height: 2px;
     }
 }
+
+
+// Stats Section
+.stats-section {
+    
+    .text-div {
+        p {
+            max-width: 445px;
+            text-align: center;
+        }
+    }
+    .stat-div {
+        .stat-item {
+            h5 {
+                font-weight: 500;
+            }
+            p {
+                font-size: 64px;
+                color: $primary;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+
+// Faq Section
+.faq-section {
+    .accordion-div {
+        .accordion {
+            max-width: $max-width-inner-page-md;
+        }
+
+        h3 {
+            margin-bottom: 0;
+        }
+        .question {
+            @include p;
+            font-weight: 600;
+            color: $text-1;
+        }
+        .answer {
+            @include p;
+        }
+    }
+}
