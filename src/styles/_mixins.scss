@@ -120,14 +120,25 @@
     letter-spacing: 0.4px;
   }
   @mixin tag-large {
-    font-size: 14px;
+    font-size: 20px;
     line-height: 1.4;
     letter-spacing: 2px;
+    color: $text-3;
+    font-weight: 500;
+  }
+  @mixin tag {
+    font-size: 16px;
+    line-height: 1.3;
+    letter-spacing: 2px;
+    color: $text-3;
+    font-weight: 500;
   }
   @mixin tag-small {
-    font-size: 10px;
+    font-size: 14px;
     line-height: 2;
     letter-spacing: 2px;
+    color: $text-3;
+    font-weight: 500;
   }
   
   
@@ -563,13 +574,3 @@
     -webkit-line-clamp: 3;  // number of lines to show
   }
 
-
-  // Additional Helper classes
-  .tag-small {
-    font-size: 16px;
-    line-height: 1.3;
-  }
-  .tag-large {
-    font-size: 20px;
-
-  }

@@ -203,6 +203,9 @@ html {
   .tag-large {
     @include tag-large;
   }
+  .tag {
+    @include tag;
+  }
   .tag-small {
     @include tag-small;
   }

@@ -108,3 +108,43 @@
         }
     }
 }
+
+// Blog Section
+.blog-section {
+    .category-div {
+        background-color: $primary-1;
+        border-radius: $border-radius-sm;
+        width: fit-content;
+
+        .tag-small {
+            color: $primary;
+            font-weight: 700;
+        }
+    }
+
+    .author-div {
+        span {
+            color: $text-7;
+        }
+    }
+}
+
+
+// Testimonials Section
+.testimonials-section {
+    .testimonials-div {
+        .item {
+            border: 1px solid $border-color;
+            border-radius: $border-radius-lg;
+
+            .img-circle {
+                border-radius: 50%;
+                aspect-ratio: 1/1;
+            }
+
+            .position {
+                font-size: 14px;
+            }
+        }
+    }
+}
