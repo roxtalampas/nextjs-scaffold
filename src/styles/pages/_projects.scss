@@ -1,0 +1,19 @@
+.projects-page {
+    .hero-banner-section {
+        .hero-project-card {
+            position: relative;
+            .text-div {
+                position: absolute;
+                z-index: 1;
+                bottom: 0;
+
+            }
+        }
+        .side-projects-card {
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}

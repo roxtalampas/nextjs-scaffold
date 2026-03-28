@@ -1,5 +1,4 @@
 
-
 .hero-banner {
     background-color: $primary-5;
     min-height: 500px;
@@ -53,7 +52,7 @@
 .features-section {
     .text-div {
         .wrapper {
-            max-width: 464px;
+            max-width: $max-width-inner-page-sm;
         }
     }
 
@@ -69,7 +68,7 @@
     
     .text-div {
         p {
-            max-width: 445px;
+            max-width: $max-width-inner-page-sm;
             text-align: center;
         }
     }
@@ -147,4 +146,20 @@
             }
         }
     }
+}
+
+// Contact Us Form
+.contact-us-form-wrapper {
+    border: 1px solid $border-color;
+    padding: 48px 40px;
+    border-radius: $border-radius-lg;
+
+    form {
+        input, textarea {
+            border: 1px solid $border-color;
+            padding: 10px 16px;
+            border-radius: $border-radius-sm;
+        }
+    }
+
 }

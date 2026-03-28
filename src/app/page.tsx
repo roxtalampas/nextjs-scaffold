@@ -6,11 +6,11 @@ import StatsSection from "@/shared/components/StatsSection";
 import FaqSection from "@/shared/components/FaqSection";
 import BlogSection from "@/shared/components/BlogSection";
 import TestimonialsSection from "@/shared/components/TestimonialsSection";
-
+import ContactUsSection from "@/shared/components/ContactUsSection";
 
 export default function Home() {
   return (
-    <main>
+    <main className="home-page">
       <HeroBanner />
       <LogoCloudSection />
       <FeaturesSection />
@@ -18,6 +18,7 @@ export default function Home() {
       <FaqSection />
       <BlogSection />
       <TestimonialsSection />
+      <ContactUsSection />
     </main>
   );
 }

@@ -1,0 +1,24 @@
+.blog-page {
+
+    .featured-section {
+        .hero-post-card {
+            img {
+                width: 100%;
+                aspect-ratio: 16/9;
+                object-fit: cover;
+            }
+        }
+
+        .category-div {
+            background-color: $primary-1;
+            border-radius: $border-radius-sm;
+            width: fit-content;
+
+            .tag-small {
+                color: $primary-5;
+                font-weight: 700;
+            }
+        }
+    }
+    
+}

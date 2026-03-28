@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 
 const baseImagePath = "/assets/images/";
 
@@ -46,7 +45,7 @@ const BlogSection = () => {
             <div className="blog-posts-div grid grid-cols-1 lg:grid-cols-3 gap-6">
                 {
                     blogPosts.map((blogPost) => (
-                        <div key={blogPost.id} className="blog-post-item">
+                        <div key={blogPost.id} className="blog-card blog-post-item">
                             <Image src={blogPost.image} alt={blogPost.title} width={500} height={500} />
 
                             <div className="text-div py-4">
