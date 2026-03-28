@@ -185,7 +185,25 @@ html {
   .border-bottom-2-primary-3 {
     border-bottom: 2px solid $primary-3;
   }
-  
+
+   //////////////////////////////
+  // Border radius
+  //////////////////////////////
+  .border-radius-sm {
+    border-radius: $border-radius-sm;
+  }
+  .border-radius-md {
+    border-radius: $border-radius-md;
+  }
+  .border-radius-lg {
+    border-radius: $border-radius-lg;
+  }
+  .border-radius-xl {
+    border-radius: $border-radius-xl;
+  }
+  .border-radius-2xl {
+    border-radius: $border-radius-2xl;
+  }
   
   // Additional typography classes
   .p-large {
