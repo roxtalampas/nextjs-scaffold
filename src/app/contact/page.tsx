@@ -1,8 +1,10 @@
 
 
-const ContactUsSection = () => {
+const ContactPage = () => {
   return (
-    <section className="full-bleed contact-us-section">
+    <main className="contact-page">
+        
+        <section className="full-bleed hero-banner-section">
         <div className="container grid grid-cols-1 lg:grid-cols-2 gap-10">
             <div className="text-div flex flex-col  justify-center mb-10">
                 <h2 className=" mb-10">Let&apos;s Build Something Amazing Together
@@ -44,8 +46,9 @@ const ContactUsSection = () => {
                 
             </div>
         </div>
-    </section>
+        </section>
+    </main>
   )
 }
 
-export default ContactUsSection
+export default ContactPage
