@@ -8,9 +8,9 @@ const Footer = () => {
   return (
     <footer className="site-footer">
   <div className="container">
-    <div className="footer-content">
+    <div className="footer-content grid grid-cols-1 lg:grid-cols-5 gap-15">
       {/* Company Info Column */}
-      <div className="footer-column company-info">
+      <div className="footer-column company-info col-span-2">
         <div className="logo">
           <Link href="/">
             <Image src="/kiun-studio-logo.svg" alt="Footer Logo" width={178} height={178} />
@@ -22,7 +22,7 @@ const Footer = () => {
       </div>
 
       {/* Quick Links Column */}
-      <div className="footer-column pt-4 md:pt-0">
+      <div className="footer-column pt-4 md:pt-0 col-span-1">
         <h3>Quick Links</h3>
         <ul>
           <li><Link href="/">Home</Link></li>
@@ -34,7 +34,7 @@ const Footer = () => {
       </div>
 
       {/* Office Address Column */}
-      <div className="footer-column pt-4 md:pt-0">
+      <div className="footer-column pt-4 md:pt-0 col-span-1">
         <h3>Location</h3>
         <p className="address"><b className="text-1">Headquarters:</b><br />123 Placeholder Lane, Suite 4B, Wellington 6011</p>
         <p className="address"><b className="text-1">Branch:</b><br/>
@@ -45,7 +45,7 @@ const Footer = () => {
       
 
       {/* Contact us Column */}
-      <div className="footer-column pt-4 md:pt-0">
+      <div className="footer-column pt-4 md:pt-0 col-span-1">
         <h3>Contact us</h3>
         <p className="contact-item">
           <a href="tel:+64210222222" className="phone">

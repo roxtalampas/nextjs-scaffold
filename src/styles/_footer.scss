@@ -13,15 +13,12 @@
     }
   
     .footer-content {
-      display: grid;
-      grid-template-columns: auto auto auto auto auto;
-      gap: 60px;
       margin-bottom: 40px;
   
-      @media (max-width: $lg) {
-        grid-template-columns: 1fr;
-        gap: 30px;
-      }
+      // @media (max-width: $lg) {
+      //   grid-template-columns: 1fr;
+      //   gap: 30px;
+      // }
   
       @media (max-width: $md) {
         display: flex;
