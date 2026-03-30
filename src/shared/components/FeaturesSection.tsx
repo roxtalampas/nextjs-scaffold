@@ -32,7 +32,7 @@ const FeaturesSection = () => {
                         <Image src={`${baseImagePath}placeholder-img.png`} alt="Features Section Image" width={500} height={500} />
                     </div>
                     
-                    <div className="text-div flex flex-col justify-center p-6 lg:p-10 order-1 lg:order-2">
+                    <div className="text-div flex flex-col justify-center p-6 lg:p-10 lg:px-0 order-1 lg:order-2">
                         <div className="wrapper">
                             <h2 className="mb-6">Understand sales
                             performance better</h2>

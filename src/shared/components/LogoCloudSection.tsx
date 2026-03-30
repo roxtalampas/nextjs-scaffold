@@ -31,7 +31,7 @@ const LogoCloudSection = () => {
   return (
     <section className="logo-cloud-section">
         <div className="container">
-            <p className="mb-10">Trusted by the clients we have worked with</p>
+            <p className="mb-10 text-center">Trusted by the clients we have worked with</p>
             <div className="logo-cloud-content flex flex-wrap items-center justify-center gap-x-10 gap-y-6">
                 
                     {logos.map((logo) => (
