@@ -75,7 +75,7 @@ const ProjectsPage = () => {
                         </div>
                     </div>
 
-                    <div className="side-projects-div flex flex-col justify-between">
+                    <div className="side-projects-div flex flex-col justify-between gap-8">
                         {
                             sideProjects.map((sideProject) => (
                                 <div key={sideProject.id} className="side-projects-card">

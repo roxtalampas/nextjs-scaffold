@@ -152,7 +152,7 @@ const Header = () => {
                       fill="white"
                     />
                   </svg>
-                  <span className="ml-2">0800 880 018</span>
+                  <span className="ml-2">+64 21 022 2222</span>
                 </a>
               </div>
             </div>

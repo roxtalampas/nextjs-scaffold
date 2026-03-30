@@ -105,7 +105,7 @@ const BlogSection = () => {
                 <p>Lorem ipsum dolor sit amet elit ut aliquam</p>
             </div>
             
-            <div className="blog-posts-div grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <div className="blog-posts-div grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {
                     blogPosts.slice(0, 3).map((blogPost) => (
                         <BlogCard key={blogPost.id} blogPost={blogPost} />

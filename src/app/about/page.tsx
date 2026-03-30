@@ -71,7 +71,7 @@ const AboutPage = () => {
                     <p>Lorem ipsum dolor sit amet elit ut aliquam</p>
                 </div>
                 
-                <div className="team-div grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <div className="team-div grid grid-cols-1 md:grid-cols-2 gap-6">
                     {
                         teamMembers.map((member) =>{
                             return (

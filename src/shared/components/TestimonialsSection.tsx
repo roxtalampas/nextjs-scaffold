@@ -37,7 +37,7 @@ const TestimonialsSection = () => {
                 {
                     testimonials.map((testimonial) => (
                         <div key={testimonial.id} className="item py-10 px-8">
-                            <Image src={`${iconPath}star-review-icon.svg`} alt="quote" width={140} height={20} className="mb-6" />
+                            <Image src={`${iconPath}star-review-icon.svg`} alt="quote" width={140} height={20} className="mb-6 h-5" />
                             <p className="mb-6">{testimonial.testimonial}</p>
                             
                             <div className="flex items-center gap-4">

@@ -3,8 +3,8 @@
 const ContactUsSection = () => {
   return (
     <section className="full-bleed contact-us-section">
-        <div className="container grid grid-cols-1 lg:grid-cols-2 gap-10">
-            <div className="text-div flex flex-col  justify-center mb-10">
+        <div className="container grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10">
+            <div className="text-div flex flex-col  justify-center lg:mb-10">
                 <h2 className=" mb-10">Let&apos;s Build Something Amazing Together
                 </h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit ut aliquam,

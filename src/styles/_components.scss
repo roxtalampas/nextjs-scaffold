@@ -1,4 +1,4 @@
-
+// Hero Banner
 .hero-banner {
     background-color: $primary-5;
     min-height: 500px;
@@ -34,7 +34,7 @@
         align-items: center;
 
         .logo-cloud-item {
-            min-height: 80px;
+            //min-height: 80px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -44,7 +44,7 @@
                 height: 100%;
                 object-fit: contain;
             }
-        }
+        }   
     }
 }
 
@@ -59,6 +59,10 @@
     .line {
         max-width: 120px;
         height: 2px;
+    }
+    .check-icon {
+        width: 20px;
+        height: 20px;
     }
 }
 
@@ -129,6 +133,7 @@
             .img-circle {
                 border-radius: 50%;
                 aspect-ratio: 1/1;
+                width: 60px;
             }
 
             .position {
@@ -141,8 +146,12 @@
 // Contact Us Form
 .contact-us-form-wrapper {
     border: 1px solid $border-color;
-    padding: 48px 40px;
+    padding: 20px;
     border-radius: $border-radius-lg;
+
+    @media (min-width: $xl) {
+        padding: 48px 40px;
+    }
 
     form {
         input, textarea {

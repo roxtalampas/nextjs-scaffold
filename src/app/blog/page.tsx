@@ -99,7 +99,7 @@ const featuredPosts = [
 
 // Split the featured posts into hero post and side posts
 const heroPost = featuredPosts[0];
-const sidePosts = featuredPosts.slice(1, 4); // takes items at index 1, 2, 3
+const sidePosts = featuredPosts.slice(1, 5); // takes items at index 1, 2, 3, 4
 
 
 const BlogPage = () => {
@@ -112,7 +112,7 @@ const BlogPage = () => {
                 <h2>Featured Blog Posts</h2>
                 <p className="mb-10">Lorem ipsum dolor sit amet elit ut aliquam</p>
 
-                <div className="grid grid-cols-1 lg:grid-cols-5 gap-16">
+                <div className="grid grid-cols-1 lg:grid-cols-5 gap-y-8 lg:gap-16">
                     <div className="hero-post-card col-span-3">
                         <Link href={`/blog/${heroPost.slug}`}>
                             <Image src={heroPost.image} alt={heroPost.title} width={800} height={500} />
@@ -134,10 +134,12 @@ const BlogPage = () => {
 
                     <div className="flex flex-col gap-6 col-span-2">
                         {sidePosts.map((post) => (
-                        <div key={post.id} className="side-post-card flex gap-4">
-                            <Link href={`/blog/${post.slug}`}>
-                                <Image src={post.image} alt={post.title} width={150} height={150} />
-                            </Link>
+                        <div key={post.id} className="side-post-card flex flex-col md:flex-row gap-4 md:items-start">
+                            <div className="image-div">
+                                <Link href={`/blog/${post.slug}`}>
+                                    <Image src={post.image} alt={post.title} width={150} height={150} />
+                                </Link>
+                            </div>
                             <div className="text-div py-2">
                             <div className="category-pill py-1 px-2 mb-2">
                                 <span className="tag-small">{post.category}</span>
@@ -162,7 +164,7 @@ const BlogPage = () => {
         {/* Latest Blog Posts Section */}
         <section className="full-bleed blog-section">
             <div className="container">
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-16">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {
                     featuredPosts.map((post) => (
                         <BlogCard key={post.id} blogPost={post} />
