@@ -3,6 +3,7 @@ import { Plus_Jakarta_Sans } from "next/font/google";
 import "../styles/globals.css";
 import "../styles/main.scss";
 import AppProviders from "./providers";
+import PageMain from "./PageMain";
 
 import Header from "@/shared/components/Header";
 import Footer from "@/shared/components/Footer";
@@ -39,7 +40,7 @@ export default function RootLayout({
       >
         <AppProviders>
           <Header />
-          {children}
+          <PageMain>{children}</PageMain>
           <Footer />
         </AppProviders>
       </body>
